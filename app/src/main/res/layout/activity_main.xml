@@ -22,18 +22,29 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="137dp"
+                android:layout_height="124dp"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:fontFamily="@font/earwig_factory"
                     android:text="@string/header"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="60sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/earwig_factory"
+                    android:text="- Bill Calculator -"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -53,7 +64,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/chiaro"
-                        android:text="@string/amount" />
+                        android:text="@string/amount"
+                        android:textColor="#FFFFFF" />
 
                     <EditText
                         android:id="@+id/editAmount"
@@ -62,13 +74,15 @@
                         android:ems="10"
                         android:fontFamily="@font/chiaro"
                         android:hint="@string/enter_amount"
-                        android:inputType="phone"/>
+                        android:inputType="phone"
+                        android:textColor="@color/white"
+                        android:textColorHint="#99FFFFFF" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="73dp"
                     android:layout_gravity="center"
                     android:orientation="vertical">
 
@@ -77,7 +91,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/chiaro"
-                        android:text="@string/num_of_pax" />
+                        android:text="@string/num_of_pax"
+                        android:textColor="#FFFFFF" />
 
                     <EditText
                         android:id="@+id/editPax"
@@ -86,13 +101,15 @@
                         android:ems="10"
                         android:fontFamily="@font/chiaro"
                         android:hint="@string/enter_pax"
-                        android:inputType="phone" />
+                        android:inputType="phone"
+                        android:textColor="@color/white"
+                        android:textColorHint="#99FFFFFF" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="63dp"
                     android:layout_gravity="center"
                     android:orientation="horizontal">
 
@@ -101,8 +118,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@drawable/button_bg"
                         android:fontFamily="@font/chiaro"
                         android:text="@string/no_svs"
+                        android:textColor="@color/white"
                         android:textOff="SVS exc."
                         android:textOn="SVS inc." />
 
@@ -111,7 +130,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@drawable/button_bg"
                         android:fontFamily="@font/chiaro"
+                        android:textColor="@color/white"
                         android:textOff="@string/gst_exc"
                         android:textOn="@string/gst_inc" />
                 </LinearLayout>
@@ -129,7 +150,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/chiaro"
-                    android:text="@string/discount" />
+                    android:text="@string/discount"
+                    android:textColor="#FFFFFF" />
 
                 <EditText
                     android:id="@+id/editDiscount"
@@ -138,13 +160,15 @@
                     android:ems="10"
                     android:fontFamily="@font/chiaro"
                     android:hint="@string/enter_discount"
-                    android:inputType="phone" />
+                    android:inputType="phone"
+                    android:textColor="@color/white"
+                    android:textColorHint="#99FFFFFF" />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="59dp"
                 android:layout_gravity="center">
 
                 <RadioGroup
@@ -158,21 +182,25 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/chiaro"
-                        android:text="@string/cash" />
+                        android:text="@string/cash"
+                        android:textColor="@color/white"
+                        app:buttonTint="@color/white" />
 
                     <RadioButton
                         android:id="@+id/paynowRB"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/chiaro"
-                        android:text="@string/paynow" />
+                        android:text="@string/paynow"
+                        android:textColor="@color/white"
+                        app:buttonTint="@color/white" />
                 </RadioGroup>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="66dp"
                 android:layout_gravity="center"
                 android:orientation="horizontal">
 
@@ -181,16 +209,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@drawable/button_bg"
                     android:fontFamily="@font/chiaro"
-                    android:text="@string/split" />
+                    android:text="@string/split"
+                    app:backgroundTint="#C45656" />
 
                 <Button
                     android:id="@+id/resetButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@drawable/button_bg"
                     android:fontFamily="@font/chiaro"
-                    android:text="@string/reset" />
+                    android:text="@string/reset"
+                    app:backgroundTint="#C45656" />
             </LinearLayout>
 
             <LinearLayout
@@ -205,6 +237,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/chiaro"
                     android:text="@string/total_bill"
+                    android:textColor="@color/white"
                     android:textSize="20sp" />
 
                 <TextView
@@ -213,6 +246,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/chiaro"
                     android:text="@string/each_pays"
+                    android:textColor="@color/white"
                     android:textSize="20sp" />
             </LinearLayout>
 
