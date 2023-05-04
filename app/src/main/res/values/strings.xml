@@ -17,4 +17,7 @@
     <string name="gst_exc">GST exc.</string>
     <string name="gst_inc">GST inc.</string>
     <string name="header">Café LeBlanc</string>
+    <string name="bill_calculator">- Bill Calculator -</string>
+    <string name="svs_exc">SVS exc.</string>
+    <string name="svs_inc">SVS inc.</string>
 </resources>

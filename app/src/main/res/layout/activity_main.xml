@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/earwig_factory"
-                    android:text="- Bill Calculator -"
+                    android:text="@string/bill_calculator"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
@@ -122,8 +122,8 @@
                         android:fontFamily="@font/chiaro"
                         android:text="@string/no_svs"
                         android:textColor="@color/white"
-                        android:textOff="SVS exc."
-                        android:textOn="SVS inc." />
+                        android:textOff="@string/svs_exc"
+                        android:textOn="@string/svs_inc" />
 
                     <ToggleButton
                         android:id="@+id/gstButton"
